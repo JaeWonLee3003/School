@@ -1,21 +1,32 @@
-import day1.pack.BookVO;
+package poly;
+
+import poly.*;
 
 public class TEST2 {
 
 	public static void main(String[] args) {
 		
-		BookVO b = new BookVO();
-		
-		b.title = "성공하는 사람들의 7가지 습관";
-		b.price = 9000;
-		b.company = "창비";
-		b.page = 100;
-		
-		System.out.println("책 제목 : " + b.title);
-		System.out.println(b.price+"\t");
-		System.out.print(b.company+"\t");
-		System.out.print(b.page+"\t");
+		Dog d = new Dog();
+		Cat c = new Cat();
+
+		Animal[] r = new Animal[2];
+		r[0] = new Dog();
+		r[1] = new Cat();
+		// r[0].say();
+		// r[1].say();
+
+		showAnimal(r); // -> 함수 구하기
+
+		// show(d);
+		// show(c);
 
 	}
 
+	private static void showAnimal(Animal[] r) {
+		for (int i = 0; i < r.length; i++) {
+			r[i].say();
+			r[i].walk();
+
+		}
+	}
 }
