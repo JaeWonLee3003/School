@@ -1,8 +1,12 @@
-package poly;
+package diagram;
 
-public abstract class Animal {
-	public abstract void say();
-	public void walk()  {
-	System.out.println("네 발로 걷는다"); }
-
+public class Animal extends Creature{
+   
+	public Animal(int x,int y,int age) {
+		super(x,y,age);
+	}
+	@Override
+	public void attack() {
+		System.out.println("『몸통 박치기!』");
+	}
 }

@@ -1,0 +1,8 @@
+package lastpang;
+
+public interface Operate {
+	
+	   int operate(int a, int b) {
+	}
+
+}
